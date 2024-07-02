@@ -1,0 +1,28 @@
+
+
+import { Card } from 'react-bootstrap';
+
+
+
+const App = () => {
+  const firstName = prompt("votrePrenom"); // ENTRER VOTRE PRENOM
+
+  return (
+    <div className="App" style={{ padding: '20px' }}>
+      <Card style={{ width: '18rem' }}>
+        <Card.Body>
+          <Image />
+          <Name />    
+          <Price />
+          <Description />
+        </Card.Body>
+      </Card>
+      <p>
+        Bonjour, {firstName ? firstName : "Hello, là!"}
+      </p>
+      {firstName && <img src="" alt="profile" />}
+    </div>
+  );
+}
+
+export default App;
